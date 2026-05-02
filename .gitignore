@@ -1,52 +1,15 @@
-# ------------------------------
-# 1. 构建产物 (Build)
-# ------------------------------
-build/
-*/build/
-app/release/
-app/debug/
-
-# ------------------------------
-# 2. Gradle 相关
-# ------------------------------
-.gradle/
-gradle-app.setting
-!gradle-wrapper.jar
-.gradletasknamecache
-gradle.properties
-
-# ------------------------------
-# 3. IDE 配置 (Android Studio)
-# ------------------------------
-.idea/
 *.iml
-*.ipr
-*.iws
-.cxx/
-local.properties
-
-# ------------------------------
-# 4. 签名 & 敏感信息
-# ------------------------------
-*.jks
-*.keystore
-*.p12
-*.pfx
-signing.properties
-
-# ------------------------------
-# 5. Kotlin 特定
-# ------------------------------
-kotlinc/
-*.kotlin_module
-
-# ------------------------------
-# 6. 系统文件
-# ------------------------------
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
 .DS_Store
-Thumbs.db
-
-# ------------------------------
-# 7. 日志
-# ------------------------------
-*.log
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties

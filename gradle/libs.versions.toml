@@ -9,6 +9,7 @@ appcompat = "1.7.0"
 material = "1.10.0"
 
 splashscreen = "1.2.0"
+lottie = "6.7.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -19,7 +20,10 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 #SplashScreen API 兼容包
-splashscreen = { group = "androidx.core", name ="core-splashscreen", version.ref = "splashscreen"}
+splashscreen = { group = "androidx.core", name ="core-splashscreen", version.ref = "splashscreen" }
+
+#Lottie 动画
+lottie = { group = "com.airbnb.android", name = "lottie", version.ref = "lottie" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

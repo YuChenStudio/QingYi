@@ -26,15 +26,29 @@ class MainActivity: ComponentActivity() {
 
         setContentView(R.layout.activity_main)
 
-        initActivityAnimation()
-        initView()
+        initCore()
+        initUI()
     }
-
-
 
     /* --- --- --- 自定义区 - 类方法 --- --- --- */
     /*
-    *   初始化控件/视口
+    *   初始化非UI界面的相关数据 / 实例
+    * */
+    private fun initCore() {
+        initActivityAnimation()
+    }
+
+    /*
+    *   初始化 UI 相关组件
+    * */
+    private fun initUI() {
+        findViewById<AppCompatTextView>(R.id.tv_hello).apply {
+            typeface = Typeface.create(typeface, 600, false)
+        }
+    }
+
+    /*
+    *   初始化 activity 动画
     * */
     @Suppress("DEPRECATION")
     private fun initActivityAnimation() {
@@ -49,15 +63,6 @@ class MainActivity: ComponentActivity() {
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
 
             Log.d(CLASS_NAME, "当前 Android OS 版本 ≤ 14，使用 overridePendingTransition 处理动画")
-        }
-    }
-
-    /*
-    *   初始化控件/视口
-    * */
-    private fun initView() {
-        findViewById<AppCompatTextView>(R.id.tv_hello).apply {
-            typeface = Typeface.create(typeface, 600, false)
         }
     }
 }
